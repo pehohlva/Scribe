@@ -1,0 +1,39 @@
+# Generated qmake pri file  
+SOURCES +=$PWD/FoColorName.cpp 
+SOURCES +=$PWD/basic_config.cpp 
+SOURCES +=$PWD/dzip.cpp 
+SOURCES +=$PWD/getfiles.cpp 
+SOURCES +=$PWD/kzip.cpp 
+SOURCES +=$PWD/main.cpp 
+SOURCES +=$PWD/xslt_convert.cpp 
+SOURCES +=$PWD/Image_Page_Struct_Mime.cpp 
+SOURCES +=$PWD/OOFormat.cpp 
+SOURCES +=$PWD/OOReader.cpp 
+SOURCES +=$PWD/PageFormatGroup.cpp 
+SOURCES +=$PWD/SessionManager.cpp 
+HEADERS +=$PWD/FoColorName.h 
+INCLUDEPATH += /Users/dev/github/_QOASIS/miniscribus3/src/lib/xslt 
+HEADERS +=$PWD/basic_config.h 
+INCLUDEPATH += /Users/dev/github/_QOASIS/miniscribus3/src/lib/xslt 
+HEADERS +=$PWD/dzip.h 
+INCLUDEPATH += /Users/dev/github/_QOASIS/miniscribus3/src/lib/xslt 
+HEADERS +=$PWD/getfiles.h 
+INCLUDEPATH += /Users/dev/github/_QOASIS/miniscribus3/src/lib/xslt 
+HEADERS +=$PWD/kzip.h 
+INCLUDEPATH += /Users/dev/github/_QOASIS/miniscribus3/src/lib/xslt 
+HEADERS +=$PWD/qt4config.h 
+INCLUDEPATH += /Users/dev/github/_QOASIS/miniscribus3/src/lib/xslt 
+HEADERS +=$PWD/qt5config.h 
+INCLUDEPATH += /Users/dev/github/_QOASIS/miniscribus3/src/lib/xslt 
+HEADERS +=$PWD/scribe_config.h 
+INCLUDEPATH += /Users/dev/github/_QOASIS/miniscribus3/src/lib/xslt 
+HEADERS +=$PWD/xslt_convert.h 
+INCLUDEPATH += /Users/dev/github/_QOASIS/miniscribus3/src/lib/xslt 
+INCLUDEPATH +=/usr/local/include/libxml2 /usr/local/include /usr/include 
+
+
+LIBS += /usr/local/lib/libxml2.dylib
+LIBS += /usr/local/lib/libxslt.dylib
+LIBS += /usr/lib/libz.dylib
+
+QT +=core gui network svg xml opengl sql multimedia 
