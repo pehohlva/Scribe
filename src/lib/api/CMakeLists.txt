@@ -166,36 +166,12 @@ INCLUDE_DIRECTORIES("./")
 INCLUDE_DIRECTORIES("./page")
 
 file (GLOB HEAD_FILES ${PWD}/*.h )
-file (GLOB SRCBASE_FILES ${PWD}/*.cpp )
+file (GLOB SRCBASE_FILES ${PWD}/*.cpp ${PWD}/*.qrc )
 set(Source_Cpp ${SRCBASE_FILES})
 
 INCLUDE_DIRECTORIES(${PWD}/page)
 file (GLOB page_FILES ${PWD}/page/*.cpp )
 list(APPEND Source_Cpp ${page_FILES})
-
-
-if(BUILDZLIB)   
-	# zlib for user wo not having...
-	INCLUDE_DIRECTORIES(${PWD}/zlib)
-	
-	list(APPEND Source_Cpp   
-${PWD}/zlib/adler32.c
-${PWD}/zlib/compress.c
-${PWD}/zlib/crc32.c
-${PWD}/zlib/deflate.c
-${PWD}/zlib/gzclose.c
-${PWD}/zlib/gzlib.c
-${PWD}/zlib/gzread.c
-${PWD}/zlib/gzwrite.c
-${PWD}/zlib/infback.c
-${PWD}/zlib/inffast.c
-${PWD}/zlib/inflate.c
-${PWD}/zlib/inftrees.c
-${PWD}/zlib/trees.c
-${PWD}/zlib/uncompr.c
-${PWD}/zlib/zutil.c
-)
-endif()
 
 
 

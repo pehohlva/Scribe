@@ -36,9 +36,9 @@ HEADERS += basic_config.h \
            kzip.h \
            scribe_config.h \
            xslt_convert.h \
-           page/Image_Page_Struct_Mime.h \
-           page/OOFormat.h \
-           page/OOReader.h 
+           Image_Page_Struct_Mime.h \
+           OOFormat.h \
+           OOReader.h
 SOURCES += basic_config.cpp \
            dzip.cpp \
            FoColorName.cpp \
@@ -46,6 +46,6 @@ SOURCES += basic_config.cpp \
            kzip.cpp \
            main.cpp \
            xslt_convert.cpp \
-           page/Image_Page_Struct_Mime.cpp \
-           page/OOFormat.cpp \
-           page/OOReader.cpp
+           Image_Page_Struct_Mime.cpp \
+           OOFormat.cpp \
+           OOReader.cpp

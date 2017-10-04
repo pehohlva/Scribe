@@ -64,6 +64,8 @@ static const qreal MAXIMUMZINDEXFLOATING = 999.1;
 
 static const qreal NEWLAYERZINDEXFLOATING = 1.1;
 
+static const qreal FONTSIZESCALE = 1.18;
+
 static const qreal NEWLAYERWI = 350;
 static const qreal NEWLAYERHI = 40;
 

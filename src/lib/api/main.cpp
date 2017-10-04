@@ -2,18 +2,22 @@
 #include "xslt_convert.h"
 
 #include "OOReader.h"
+#include "view_xml_editor.h"
 
-
+/* this is a main to test lib fil source rename as txt so cmake not include on lib... 
+stable file comming in this lib  */
 
 int main( int argc, char ** argv )
 {
     /// ok Dzip unzip("key.zip"); /// pass
     QApplication app( argc, argv );
     SCDEBUG() << "start main here...";
-    QTextEdit t;
-    OOReader *readodt = new OOReader("/Users/dev/github/_QOASIS/miniscribus3/src/lib/api/key.odt");
-    readodt->read();
-    t.setDocument(readodt->document());
+    XMLTextEdit t;
+    Xslt_Convert gox("key.xml","key.xsl","conrec.xml");
+    t.readFile("conrec.xml");
+    ///// OOReader *readodt = new OOReader("/Users/dev/github/_QOASIS/Scribe/src/lib/api/key.odt");
+    /////readodt->read();
+    /////t.setDocument(readodt->document());
     t.show();
     t.raise();
     return app.exec();
